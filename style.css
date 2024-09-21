@@ -493,13 +493,14 @@ input[type="number"]::-webkit-inner-spin-button {
   top: -200%;
   left: 0;
   height: 100%;
-  transition: .5s;
+  transition:top .3s ease-out;
   width: 100%;
   text-align: center;
   background: rgba(0, 0, 0, .7);
   padding: 1rem;
   /* padding-top: 2rem; */
   cursor: pointer;
+  will-change: top;
 }
 
 .gallery .box-container .box:hover .content {

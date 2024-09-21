@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour & Travel</title>
+  <link rel="shortcut icon" href="./assests/logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <Header class="header-section">
+      <a href="#" class="logo"> <span>T</span>ravel</a>
+      <ul class="nav-items">
+        <a href="#home">
+          <li class="nav-item">Home</li>
+        </a>
+        <a href="#services">
+          <li class="nav-item">About</li>
+        </a>
+        <a href="#services">
+          <li class="nav-item">Services</li>
+        </a>
+        <a href="#gallery">
+          <li class="nav-item">Gallery</li>
+        </a>
+        <a href="#review">
+          <li class="nav-item">Review</li>
+        </a>
+        <a href="#contact">
+          <li class="nav-item">Contact</li>
+        </a>
+      </ul>
+      <img class="menu" src="./assests/menu.png" alt="" onclick="handleMenu()">
+      <img onclick="handleCross()" src="./assests/cross.png" class="cross" alt="">
+    </Header>
+
+    <section class="home-section" id="home">
+      <div class="content">
+        <h3>Adventure is Worthwhile</h3>
+        <p>Discover new places with us, advanture awaits</p>
+        <a href="#packages" class="home-btn">Discover more</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="./assests/vid1.mp4"></span>
+        <span class="vid-btn" data-src="./assests/vid2.mp4"></span>
+        <span class="vid-btn" data-src="./assests/vid3.mp4"></span>
+        <span class="vid-btn" data-src="./assests/vid4.mp4"></span>
+        <span class="vid-btn" data-src="./assests/vid5.mp4"></span>
+        <span class="vid-btn" data-src="./assests/vid6.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video class="video-slider" src="./assests/vid1.mp4" loading="lazy" preload="auto" autoplay muted loop></video>
+        <video class="video-slider" src="./assests/vid2.mp4" loading="lazy" preload="auto" autoplay muted loop
+          style="display: none;"></video>
+        <video class="video-slider" src="./assests/vid3.mp4" loading="lazy" preload="auto" autoplay muted loop
+          style="display: none;"></video>
+        <video class="video-slider" src="./assests/vid4.mp4" loading="lazy" preload="auto" autoplay muted loop
+          style="display: none;"></video>
+        <video class="video-slider" src="./assests/vid5.mp4" loading="lazy" preload="auto" autoplay muted loop
+          style="display: none;"></video>
+        <video class="video-slider" src="./assests/vid6.mp4" loading="lazy" preload="auto" autoplay muted loop
+          style="display: none;"></video>
+      </div>
+
+    </section>
+
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span> &nbsp;
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./assests/book.jpg" alt="">
+        </div>
+        <form class="bookForm">
+          <div class="inputBox">
+            <h3>Where to</h3>
+            <input type="text" placeholder="Place Name" class="place" min="3">
+          </div>
+          <div class="inputBox">
+            <h3>How Many</h3>
+            <input type="number" placeholder="Number of Guests" class="numberOfGuests">
+          </div>
+          <div class="inputBox">
+            <h3>Arrival Date</h3>
+            <input class="today arrivalDate" type="date" placeholder="Arrival Date">
+          </div>
+          <div class="inputBox">
+            <h3>Leaving Date</h3>
+            <input class="today leavingDate" type="date" placeholder="Leaving Date">
+          </div>
+          <button type="submit" class="book-btn">Book Now</button>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+      <div class="box-container">
+
+
+
+      </div>
+
+    </section>
+
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container servicesContainer">
+
+      </div>
+    </section>
+
+
+    <section class="gallery " id="gallery">
+      <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+      </h1>
+
+      <div class="box-container galleryContainer">
+
+      </div>
+
+    </section>
+
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+        <span>S</span>
+      </h1>
+
+      <div class="review-slider swiper">
+        <div class="swiper-wrapper reviewContainer">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./assests/contact.jpg" alt="">
+        </div>
+        <form onsubmit="handleContact()">
+          <div class="inputBox">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" name="" placeholder="Email" id="email">
+          </div>
+          <div class="inputBox">
+            <input type="number" name="" id="number" placeholder="Number">
+            <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <textarea name="" placeholder="Message" id="message"></textarea>
+          <input type="submit" value="Send Message" class="c-btn">
+        </form>
+      </div>
+    </section>
+
+    <section class="footer" style="margin-bottom: 0;">
+      <div class="box-container">
+        <div class="box">
+          <h3>About us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolores soluta unde officia vero harum
+            beatae id quasi aperiam accusantium.</p>
+        </div>
+        <div class="box">
+          <h3>Branch Locations</h3>
+          <a href="">India</a>
+          <a href="">USA</a>
+          <a href="">Japan</a>
+          <a href="">France</a>
+
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#book">Book</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+
+        </div>
+        <div class="box">
+          <h3>Follow us</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+
+      <h1 class="credit">Created by <span>Sachin Prajapati</span> | All rights Reserved</h1>
+    </section>
+
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>

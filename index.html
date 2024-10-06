@@ -90,22 +90,24 @@
         <div class="image">
           <img src="./assests/book.jpg" alt="">
         </div>
-        <form class="bookForm">
+        <form class="bookForm" onsubmit="handleBook()">
           <div class="inputBox">
             <h3>Where to</h3>
-            <input type="text" placeholder="Place Name" class="place" min="3">
+            <input type="text" placeholder="Place Name" class="place" id="place" min="3">
           </div>
           <div class="inputBox">
             <h3>How Many</h3>
-            <input type="number" placeholder="Number of Guests" class="numberOfGuests">
+            <input type="number" placeholder="Number of Guests" id="numberOfGuests" class="numberOfGuests">
           </div>
+
           <div class="inputBox">
-            <h3>Arrival Date</h3>
-            <input class="today arrivalDate" type="date" placeholder="Arrival Date">
+            <h3>Travel Date</h3>
+            <input class="travelDate" id="travelDate" type="date" placeholder="Travel Date">
           </div>
+
           <div class="inputBox">
-            <h3>Leaving Date</h3>
-            <input class="today leavingDate" type="date" placeholder="Leaving Date">
+            <h3>Mobile Number</h3>
+            <input class="phone" id="numberBook" type="tel" oninput="this.value = this.value.replace(/[^0-9]/g, '')"  maxlength="10" placeholder="Enter Mobile Number">
           </div>
           <button type="submit" class="book-btn">Book Now</button>
         </form>
@@ -206,7 +208,7 @@
             <input type="email" name="" placeholder="Email" id="email">
           </div>
           <div class="inputBox">
-            <input type="number" name="" id="number" placeholder="Number">
+            <input type="tel"  maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')"  name="" id="number" placeholder="Number">
             <input type="text" placeholder="Subject" id="subject">
           </div>
           <textarea name="" placeholder="Message" id="message"></textarea>

@@ -416,3 +416,30 @@ function handleContact() {
     alert("Please provide correct information")
   }
 }
+
+
+
+
+function handleBook() {
+  let place = document.querySelector('#place');
+  let guests = document.querySelector('#numberOfGuests');
+  let number = document.querySelector('#numberBook');
+  let travelDate = document.querySelector('#travelDate');
+   if (place.value && guests.value && number.value && travelDate.value) {
+    alert(`Form Submitted Successfully 
+    Name: ${place.value}
+    No. of Guests: ${guests.value}
+    Mobile Number: ${number.value}
+    Travel Date: ${travelDate.value}
+   `)
+    place.value = "";
+    guests.value = "";
+    number.value = '';
+    travelDate.value = '';
+
+    window.location.href = '#book';
+  }
+  else {
+    alert("Please provide correct information")
+  }
+}
